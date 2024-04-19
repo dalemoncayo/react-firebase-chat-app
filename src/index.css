@@ -1,0 +1,25 @@
+input, button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-out {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
