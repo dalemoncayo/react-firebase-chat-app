@@ -15,29 +15,29 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
 
-\`\`\`bash
+```bash
 git clone <repository_url>
-\`\`\`
+```
 
 2. Navigate to the project directory:
 
-\`\`\`bash
+```bash
 cd react-firebase-project
-\`\`\`
+```
 
 3. Install dependencies:
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### Development
 
 1. Start the development server:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 2. Open your browser and go to http://localhost:<port>
 
@@ -53,7 +53,7 @@ Follow these steps to configure Firebase services for the project:
 
 4. Add the following Firestore Security Rules:
 
-\`\`\`firebase
+```firebase
 rules_version = '2';
 
 service cloud.firestore {
@@ -63,15 +63,15 @@ service cloud.firestore {
     }
   }
 }
-\`\`\`
+```
 
-5. Add the following Firestore Indexes: \`chat_messagechatRoomId Ascending timestamp Ascending __name__ Ascending\`.
+5. Add the following Firestore Indexes: `chat_messagechatRoomId Ascending timestamp Ascending __name__ Ascending`.
 
 6. Enable Firebase Cloud Storage.
 
 7. Add the following Cloud Storage Security Rules:
 
-\`\`\`firebase
+```firebase
 rules_version = '2';
 
 service firebase.storage {
@@ -81,7 +81,7 @@ service firebase.storage {
     }
   }
 }
-\`\`\`
+```
 
 8. Copy the Firebase config keys and paste them into \`src/configs/firebase.js\` in your React project.
 
